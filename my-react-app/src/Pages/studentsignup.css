@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background: #130d25;
+  color: #fff;
+}
+
+.left-panel {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #5423dbbe;
+}
+
+.right-panel {
+  flex: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-box {
+  width: 100%;
+  max-width: 380px;
+}
+
+.subtitle {
+  color: #aaa;
+  font-size: 0.8rem;
+  margin: 4px 0 16px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-bottom: 10px;
+  font-size: 0.75rem;
+}
+
+.field input, .phone-wrapper {
+  background: #fbeedb;
+  border-radius: 4px;
+}
+
+.field input {
+  border: none;
+  padding: 8px;
+  outline: none;
+  color: #130d25;
+}
+
+.phone-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.phone-wrapper .code {
+  color: #130d25;
+  padding: 0 8px;
+  border-right: 1px solid #ccc;
+}
+
+.phone-wrapper input {
+  width: 100%;
+}
+
+.checkbox {
+  display: flex;
+  gap: 6px;
+  font-size: 0.7rem;
+  color: #aaaaaade;
+  margin-bottom: 14px;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.primary-btn { background: #f0c14083; color: #261264; }
+.google-btn { background: #fff; color: #584299; }
+
+.divider {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 0.75rem;
+  color: #aaa;
+}
