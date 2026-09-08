@@ -1,0 +1,270 @@
+.tutor-dashboard {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: #333;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 240px;
+  background-color: #ffffff;
+  border-right: 1px solid #e9ecef;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.brand-title {
+  color: #130d25;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.brand-subtitle {
+  font-size: 0.65rem;
+  color: #888;
+  letter-spacing: 1px;
+}
+
+.nav-menu {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.nav-item {
+  padding: 10px 14px;
+  border-radius: 6px;
+  color: #555;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.nav-item.active, .nav-item:hover {
+  background-color: #f0fdf4;
+  color: #16a34a;
+}
+
+.user-profile {
+  border-top: 1px solid #eee;
+  padding-top: 16px;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  background: #e2e8f0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+}
+
+.user-details h4 {
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+.user-details p {
+  margin: 0;
+  font-size: 0.75rem;
+  color: #777;
+}
+
+.logout-btn {
+  margin-top: 10px;
+  background: none;
+  border: none;
+  color: #dc2626;
+  font-size: 0.8rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Main Layout */
+.main-content {
+  flex: 1;
+  padding: 32px 40px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.search-bar input {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid #ced4da;
+  outline: none;
+}
+
+.welcome-banner h1 {
+  font-size: 1.5rem;
+  margin: 0 0 4px;
+}
+
+.welcome-banner p {
+  color: #666;
+  margin: 0 0 24px;
+  font-size: 0.9rem;
+}
+
+/* Stat Cards */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.stat-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #eef2f6;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+}
+
+.stat-card h3 {
+  font-size: 1.5rem;
+  margin: 8px 0 2px;
+}
+
+.stat-card p {
+  font-size: 0.8rem;
+  color: #777;
+  margin: 0;
+}
+
+/* Schedule & Quick Actions */
+.content-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+}
+
+.schedule-section, .quick-actions, .notifications {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #eef2f6;
+  margin-bottom: 20px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.schedule-date {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.schedule-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px;
+  border: 1px solid #f1f5f9;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.schedule-card .time {
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+.schedule-card h4 {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.schedule-card p {
+  margin: 2px 0 0;
+  font-size: 0.75rem;
+  color: #777;
+}
+
+.start-btn {
+  background: #16a34a;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.details-btn {
+  background: #f1f5f9;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #475569;
+}
+
+.action-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid #f1f5f9;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.action-card h4 {
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+.action-card p {
+  margin: 0;
+  font-size: 0.75rem;
+  color: #888;
+}
+
+.notification-item {
+  display: flex;
+  gap: 10px;
+  font-size: 0.8rem;
+  margin-bottom: 12px;
+}
+
+.notification-item .dot {
+  width: 8px;
+  height: 8px;
+  background: #16a34a;
+  border-radius: 50%;
+  margin-top: 4px;
+}
+
+.time-ago {
+  color: #aaa;
+  font-size: 0.7rem;
+  display: block;
+}
+.nav-menu .nav-item {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
