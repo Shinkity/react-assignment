@@ -7,6 +7,7 @@ import TutorOnboarding from './Pages/TutorOnboarding';
 import AvailabilitySetup from './Pages/AvailabilitySetup';
 import TutorDashboard from './Pages/TutorDashboard';
 import MyClasses from './Pages/MyClasses';
+import Students from './Pages/Students';
 
 export default function App() {
   const [page, setPage] = useState('role');
@@ -54,7 +55,7 @@ export default function App() {
         />
       )}
 
-      {/* Tutor Views */}
+      {/* Interactive Tutor Pages */}
       {page === 'dashboard' && (
         <TutorDashboard 
           onNavigate={(targetPage) => setPage(targetPage)} 
@@ -63,6 +64,12 @@ export default function App() {
       )}
       {page === 'classes' && (
         <MyClasses 
+          onNavigate={(targetPage) => setPage(targetPage)} 
+          onLogout={() => setPage('role')} 
+        />
+      )}
+      {page === 'students' && (
+        <Students 
           onNavigate={(targetPage) => setPage(targetPage)} 
           onLogout={() => setPage('role')} 
         />

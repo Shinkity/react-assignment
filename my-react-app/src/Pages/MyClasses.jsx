@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './TutorDashboard.css'; // Reuses existing sidebar and layout styles
+import './TutorDashboard.css';
 import './myclasses.css';
 
 export default function MyClasses({ onNavigate, onLogout }) {
@@ -53,23 +53,29 @@ export default function MyClasses({ onNavigate, onLogout }) {
           <span className="brand-subtitle">TUTOR PORTAL</span>
 
           <nav className="nav-menu">
-            <a 
-              href="#dashboard" 
+            <button 
+              type="button" 
               className="nav-item" 
-              onClick={(e) => { e.preventDefault(); onNavigate('dashboard'); }}
+              onClick={() => onNavigate && onNavigate('dashboard')}
             >
               Dashboard
-            </a>
-            <a 
-              href="#classes" 
+            </button>
+            <button 
+              type="button" 
               className="nav-item active" 
-              onClick={(e) => { e.preventDefault(); onNavigate('classes'); }}
+              onClick={() => onNavigate && onNavigate('classes')}
             >
               My Classes
-            </a>
-            <a href="#students" className="nav-item">Students</a>
-            <a href="#resources" className="nav-item">Resources</a>
-            <a href="#settings" className="nav-item">Settings</a>
+            </button>
+            <button 
+              type="button" 
+              className="nav-item" 
+              onClick={() => onNavigate && onNavigate('students')}
+            >
+              Students
+            </button>
+            <button type="button" className="nav-item">Resources</button>
+            <button type="button" className="nav-item">Settings</button>
           </nav>
         </div>
 
@@ -77,7 +83,7 @@ export default function MyClasses({ onNavigate, onLogout }) {
         <div className="user-profile">
           <div className="avatar">SA</div>
           <div className="user-details">
-            <h4>Stu Abdulsalam Adam</h4>
+            <h4>Abdulsalam Adam</h4>
             <p>Tutor</p>
           </div>
           <button className="logout-btn" onClick={onLogout}>Logout</button>
